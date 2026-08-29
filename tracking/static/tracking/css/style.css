@@ -1,0 +1,28 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 40px;
+    color: blue;
+}
+
+.btn {
+    display: inline-block;
+    color: gold;
+    text-decoration: none;
+}
+
+.btn-edit {
+    color: gold;
+}
+
+.btn-delete {
+    color: gold;
+}
+
+.btn-back {
+    color: gold;
+}
+
+.btn-create {
+    color: gold;
+}

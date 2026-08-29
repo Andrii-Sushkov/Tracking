@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ task.title }}</h1>
+    <p>{{ task.published_at }}</p>
+    <p>{{ task.content }}</p>
+
+    {% if task.image %}
+        <img src="{{ task.image.url }}" alt="Фото" style="max-width: 400px; width: 100%; height: auto; display: block; margin: 15px 0;">
+    {% endif %}
+
+    <a href="{% url 'task-update' task.pk %}" class="btn btn-edit">Редагувати</a>
+    <a href="{% url 'task-delete' task.pk %}" class="btn btn-delete">Видалити</a>
+
+    <a href="{% url 'task-list' %}" class="btn btn-back">Назад до списку</a>
+{% endblock %}
